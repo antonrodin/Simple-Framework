@@ -37,11 +37,10 @@ function callHook() {
     $controller = $urlArray[0];
     array_shift($urlArray); //Delete first array element
 
+    //Get action and params from explode(url)
     $action = $urlArray[0];
     array_shift($urlArray);
-
-    $queryString = $urlArray[0];
-    array_shift($urlArray);
+    $queryString = $urlArray;
 
     $controllerName = $controller;
     $controller = ucwords($controller);
@@ -52,7 +51,7 @@ function callHook() {
     $dispatch = new $controller($model, $controllerName, $action);
 
     if ((int)method_exists($controller, $action)) {
-        call_user_func_array(array($dispatch, $action), array($queryString));
+        call_user_func_array(array($dispatch, $action), $queryString);
     } else {
         /**
          * ¿Show some kind of error or load not found page;

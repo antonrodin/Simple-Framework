@@ -6,7 +6,12 @@
 echo "<p>Titulo: $title</p>";
 echo "<ul>";
 foreach($all_items as $item) {
-    echo "<li>" . $item->item_name . " : " . $item->item_desc . "</li>";
+    $item_name_url = strtolower(str_replace(" ", "-", $item->item_name));
+    echo "<li>";
+        echo "<a href=\"../../items/view/" . $item->id . "/" . $item_name_url . "/\">";
+            echo $item->item_name;
+        echo "</a>";
+    echo "</li>";
 }
 echo "</ul>";
 ?>

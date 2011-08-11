@@ -13,5 +13,9 @@ class ItemsController extends Controller {
         $this->set("all_items", $db_result);
     }
 
+    function view($id = null, $name = null) {
+        echo $id . $name;
+    }
+
 }
 ?>
