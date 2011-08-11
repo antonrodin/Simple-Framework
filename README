@@ -1,0 +1,10 @@
+Simple PHP Framework
+********************
+
+PHP Framework based on tutorial of www.anantgarg.com and modified by me:
+
+Changes:
+
+1. More powerfull model based on ezSQL developed by www.justinvincent.com. This is the same class as the WPDB from wordpress.
+2. Corrected some Bugs.
+3. More and better comments. Revised all code.
