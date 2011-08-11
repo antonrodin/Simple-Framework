@@ -1,0 +1,10 @@
+# Dont forget to put AllowOverride to On
+# You must establish that setting in httpd.conf
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Usually the DocumentRoot of the webserver directly relates to the URL "/".
+    # But often this data is not of a top level priority
+    RewriteRule    ^$    public/    [L]
+    RewriteRule    (.*) public/$1    [L]
+ </IfModule>
