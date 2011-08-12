@@ -1,10 +1,15 @@
 Simple PHP Framework
 ********************
 
-PHP Framework based on tutorial of www.anantgarg.com and modified by me:
+@author Anton Zekeriev Rodin inspired on tutorial from website www.anantgarg.com
+@link www.azrodin.com
+@licence MIT you are free to use it for all purposes.
 
-Changes:
-
-1. More powerfull model based on ezSQL developed by www.justinvincent.com. This is the same class as the WPDB from wordpress.
-2. Corrected some Bugs.
-3. More and better comments. Revised all code.
+1. Model based on ezSQL developed by www.justinvincent.com. You can connect with MySQL, Oracle, PostreSQL etc
+2. All functions are well commented.
+3. MVC pattern and strong OOP. Autoload class sistem.
+4. Easy to install.
+5. Tested on PHP 5.3.2-1ubunutu4.9 (PHP 5+ are required)
+6. SEO frendly URLS.
+7. Support jQuery and AJAX, like in wordpress.
+8. Support for multilanguage.

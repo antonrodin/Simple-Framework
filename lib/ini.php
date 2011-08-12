@@ -1,11 +1,5 @@
 <?php
 /**
- * This code we launch in the begining of the aplication
- * @author Anant Garg, modified by Anton Zekeriev Rodin
- * @author Based on web tutorial from www.anantgarg.com
- */
-
-/**
  * Modify php.ini values to show error
  * Set log file for writine errors
  */

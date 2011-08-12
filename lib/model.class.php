@@ -1,9 +1,5 @@
 <?php
-/**
- * Description of Model Class
- *
- * @author antonrodin
- */
+
 class Model extends Sql {
 
     protected $_model;

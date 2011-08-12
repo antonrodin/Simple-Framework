@@ -20,4 +20,9 @@ define('DB_USER', 'root');
 define('DB_PASS', '1234');
 define('DB_HOST', 'localhost');
 
+/**
+ * Your application path
+ */
+define('BASE_PATH', 'http://localhost/frw/');
+
 ?>

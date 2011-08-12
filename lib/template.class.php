@@ -1,11 +1,7 @@
 <?php
-/**
- * Description of Template Class
- *
- * @author Framework based on Anant Garg tutorial www.anantgarg.com
- * @author Modified by Anton Zekeriev Rodin www.azrodin.com
- */
+
 class Template {
+
     protected $_variables = array();
     protected $_controller;
     protected $_action;
@@ -14,6 +10,8 @@ class Template {
         $this->_controller = $controller;
         $this->_action = $action;
     }
+
+    function __destruct() {}
 
     function set($name, $value) {
         $this->_variables[$name] = $value;
@@ -27,11 +25,8 @@ class Template {
         //This function extract all variables from Array. Yo can use them like $title, $description
         extract($this->_variables);
 
-        //$this->_variables['title'] = "My aplication";
-        //echo count($this->_variables);
-
-        //echo "|" . $this->_controller . "|";
-        //echo $this->_variables['title'];
+        //Class that control all some html function, like links, script, css...etc
+        $html = new Html();
 
         //Declare path
         $path_1 = ROOT . DS . 'app' . DS . 'views' . DS . strtolower($this->_controller) . DS;
@@ -59,6 +54,7 @@ class Template {
         }
 
     }
+
 
 }
 ?>

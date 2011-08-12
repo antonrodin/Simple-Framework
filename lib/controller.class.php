@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Base controller class, which will be used as the base class for all our controllers
- *
- * @author antonrodin
- */
 class Controller {
 
     protected $_model;
